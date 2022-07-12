@@ -18,8 +18,9 @@ def mas_larga(cadena):
     for palabra in lista_de_palabras:
         extension = len(palabra)
         diccionario[palabra]= extension
-    resultado = max(diccionario.items(), key=lambda x: x[1])[0]
+    #resultado = max(diccionario.items(), key=lambda x: x[1])[0]
     #print(f'{diccionario=}')
+    resultado = max(diccionario, key=diccionario.get)
     print(f'{resultado=}')
 
 
