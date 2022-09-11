@@ -2,8 +2,6 @@
 ejercico 1 de:
 https://www.udemy.com/course/curso-resolver-ejercicios-reales-de-entrevistas-tecnicas-programador/learn/lecture/27096546#overview
 
-
-
 '''
 
 
