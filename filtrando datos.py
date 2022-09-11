@@ -102,25 +102,25 @@ def run():
         print(trabajador)
 if __name__ == '__main__':
     run()
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     #    all_python_devs = [worker["name"] for worker in DATA if worker["language"] == "python"]
     # all_Platzi_workers = [worker["name"]
     #                       for worker in DATA if worker["organization"] == "Platzi"]
     # adults = [worker["name"] for worker in DATA if worker["age"] > 18]
-    # 
+    #
 
     # for worker in all_python_devs:
     #     print(worker)

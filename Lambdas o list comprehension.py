@@ -1,0 +1,1 @@
+print([inp for inp in iter(lambda : input(),'0')])
