@@ -1,4 +1,5 @@
 Fuentes/
+__pycache__/
 .gitignore
 .venv
 .vscode

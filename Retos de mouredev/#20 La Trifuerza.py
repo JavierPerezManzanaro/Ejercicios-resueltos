@@ -20,7 +20,7 @@
 import os
 
 
-def triangulo(filas):
+def triforce(filas: int)->None:
     base = (2*filas)-1
     # * Primer triangulo, esta desplazado a la derecha
     for i in range(1, filas+1):
@@ -33,7 +33,7 @@ def triangulo(filas):
         huecos = filas - i
         asteriscos = base - huecos *2
         cadena_que_pinta = ' ' * huecos + '*' * asteriscos + ' ' * huecos
-        print(cadena_que_pinta + cadena_que_pinta)
+        print(cadena_que_pinta * 2)
 
 if __name__ == '__main__':
     os.system('clear')
@@ -41,10 +41,4 @@ if __name__ == '__main__':
 
     filas = int(input('¿Número de filas de alto para cada estrella? '))
     print()
-    triangulo(filas)
-
-
-
-    """
-    ***********
-    """
+    triforce(filas)
