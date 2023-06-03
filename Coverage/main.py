@@ -20,7 +20,7 @@
 import os
 
 
-def es_primo(numero: int) -> bool:
+def es_primo(numero: int)->bool:
     """Vemos si un número es primo o no
 
     Args:
@@ -47,7 +47,7 @@ def es_primo(numero: int) -> bool:
     return True
 
 
-def primos_gemelos(rango: int) -> list:
+def primos_gemelos(rango: int)->list:
     """Retorna la lista de los números primos que son gemelos
 
     Args:
@@ -65,18 +65,24 @@ def primos_gemelos(rango: int) -> list:
     [(3, 5), (5, 7), (11, 13), (17, 19), (29, 31), (41, 43), (59, 61), (71, 73), (101, 103), (107, 109), (137, 139), (149, 151), (179, 181), (191, 193), (197, 199), (227, 229), (239, 241), (269, 271), (281, 283), (311, 313), (347, 349), (419, 421), (431, 433), (461, 463), (521, 523), (569, 571), (599, 601), (617, 619), (641, 643), (659, 661), (809, 811), (821, 823), (827, 829), (857, 859), (881, 883)]
     """
     lista_primos_gemelos = []
-    for numero in range(1, rango-1):
-        if es_primo(numero) and es_primo(numero+2):
-            tupla = (numero, numero+2)
-            lista_primos_gemelos.append(tupla)
+    for numero in range(1, rango):
+        if es_primo(numero):
+            # es primo
+
+            if es_primo(numero+2):
+                #print(f'{numero} -- {numero+2}')
+                tupla = (numero, numero+2)
+                lista_primos_gemelos.append(tupla)
     return lista_primos_gemelos
+
+
 
 
 if __name__ == '__main__':
     os.system('clear')
     import doctest
-    doctest.testmod(verbose=True)
+    # doctest.testmod(verbose=True)
+    doctest.testmod()
 
-    rango = int(
-        input('El rango va desde el 1 hasta ¿Cual quieres que sea el límite? '))
+    rango = int(input('El rango va desde el 1 hasta ¿Cual quieres que sea el límite? '))
     print(primos_gemelos(rango))
