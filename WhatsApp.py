@@ -2,8 +2,8 @@ import pywhatkit
 
 phone_num = '+34677290474'
 message = 'Prueba desde Python'
-hour = 21
-minute = 15
+hour = 14
+minute = 10
 
 try:
     pywhatkit.sendwhatmsg(phone_num, message, hour, minute)
