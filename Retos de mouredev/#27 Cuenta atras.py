@@ -12,8 +12,8 @@
 import time
 
 def cuenta_atras(duracion: int, paso:int):
-    for _ in range(0, duracion):
-        time.sleep(paso)
+    time.sleep(paso*duracion)
+
 
 
 if __name__ == '__main__':
