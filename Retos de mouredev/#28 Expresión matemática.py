@@ -36,7 +36,6 @@ def expresion(expresion: str)-> bool:
     lista = expresion.split()
     salida_operacion = False
     salida_numero = True
-    #for caracter in lista:
     for i in range(len(lista)):
         if i % 2 == 0:
             try:
@@ -47,7 +46,7 @@ def expresion(expresion: str)-> bool:
             if lista[i] in '+-*/%':
                 salida_operacion = True
     # print(f'{salida_operacion=} ; {salida_numero=}')
-    if salida_operacion == True and salida_numero == True:
+    if salida_operacion == True and salida_numero == True and len(lista)>3 and len(lista) %2 !=0:
         return True
     else:
         return False
