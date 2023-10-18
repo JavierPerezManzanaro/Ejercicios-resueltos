@@ -88,7 +88,3 @@ if __name__ == '__main__':
         print(f'El fichero: "{FICHERO}" NO existe')
         print()
         crear_fichero_o_reescribir('')
-
-
-
-#

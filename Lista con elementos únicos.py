@@ -4,16 +4,13 @@ numeros = [1, 2, 2, 3, 3, 4, 5]
 def obten_numeros_unicos(numeros):
     lista_de_numeros_unicos = []
     numeros_unicos = set(numeros)
-
     for numero in numeros_unicos:
         lista_de_numeros_unicos.append(numero)
-
     return lista_de_numeros_unicos
 
 
 def obten_numeros_unicos_por_iteracion(numeros):
     unicos = []
-
     for numero in numeros:
         if numero in unicos:
             continue
@@ -29,7 +26,11 @@ def obten_numeros_unicos_por_iteracion_if_negativo(numeros):
             unicos.append(numero)
     return unicos
 
-
+""" Otras formas:
+- Utilizar métodos de lista incorporados 
+    .count() y .remove() para eliminar elementos duplicados
+- Utilice los elementos de la lista como claves del diccionario para eliminar duplicados
+"""
 
 
 print('Usar un SET y pasar al final lista')
