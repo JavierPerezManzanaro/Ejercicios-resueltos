@@ -1,5 +1,5 @@
 Fuentes/
 __pycache__/
 .gitignore
-.venv
+venv-ejercicios_resueltos
 .vscode
